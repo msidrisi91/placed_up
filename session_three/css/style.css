@@ -1,0 +1,275 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,500&display=swap"); */
+
+/* 
+Units
+1. px = pixels
+2. em = font-size
+3. rem = font-size
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat";
+  color: #4f4f4f;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.logo {
+  width: 120px;
+  height: 18px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-left: 1rem;
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0rem 5rem;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero-image {
+  height: 400px;
+  width: auto;
+  filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.12));
+}
+
+.hero-text h2 {
+  margin: 0px;
+  font-size: 32px;
+}
+
+.hero-text h1 {
+  margin: 0px;
+  font-size: 94px;
+}
+
+.hero-text h3 {
+  margin: 0px;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.hero-text {
+  margin-bottom: 4rem;
+}
+
+.primary {
+  padding: 5px 10px;
+  background: #ac1500;
+  box-shadow: 0px 4px 10px rgba(172, 21, 0, 0.25);
+  border-radius: 4px;
+  margin-right: 10px;
+  color: white;
+}
+
+.hero-nav a {
+  color: #ac1500;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+.about img {
+  position: relative;
+  top: -40px;
+  width: 500px;
+  height: auto;
+}
+
+.about-left h2 {
+  margin: 0px;
+  font-size: 64px;
+}
+
+.about-left h3 {
+  margin: 0px;
+  font-size: 36px;
+}
+
+.projects {
+  padding: 1rem 5rem;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projects h2 {
+  margin: 0px;
+  font-size: 64px;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 72vw;
+  overflow-x: scroll;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.project-img {
+  border: 1px solid #ac1500;
+  box-sizing: border-box;
+  border-radius: 16px;
+  height: 400px;
+  margin-right: 20px;
+}
+
+.scroll-buttons {
+  margin: 20px;
+  height: 180px;
+  width: auto;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
+}
+
+.list-control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.contact {
+  padding: 1rem 5rem;
+}
+
+.contact h2 {
+  margin: 0px;
+  font-size: 64px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  font-family: Montserrat;
+  height: 100%;
+  padding: 40px;
+}
+
+.contact-form input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background-color: #f0f0f0;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  font-family: Montserrat;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  background-color: #f0f0f0;
+  width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background: #ac1500;
+  box-shadow: 0px 4px 20px rgba(172, 21, 0, 0.25);
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  font-size: 2rem;
+  letter-spacing: 0.5em;
+  color: white;
+  font-weight: 500;
+}
+
+.contact-body {
+  width: 80vw;
+  display: flex;
+  margin-top: 40px;
+  flex-direction: row;
+  background: #ffffff;
+  box-shadow: 0px 4px 80px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px 5rem;
+  margin-top: 40px;
+  background: #ac1500;
+  color: white;
+  font-size: 12px;
+}
+
+.footer p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.social {
+  position: fixed;
+  right: 0px;
+  top: 20vh;
+  height: 50vh;
+  background: #ffffff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
+  border: 1px solid #ac150a;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px 0px 0px 16px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.sicon {
+  width: 35px;
+  height: 35px;
+}

@@ -62,6 +62,7 @@ a {
 .hero-image {
   height: 400px;
   width: auto;
+  filter: drop-shadow(0px 4px 120px rgba(0, 0, 0, 0.12));
 }
 
 .hero-text h2 {
