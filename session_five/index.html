@@ -12,8 +12,10 @@
     <section id="hero" class="hero">
       <nav>
         <img src="assets/logo.svg" alt="a logo" class="logo" />
-
-        <ul class="nav-list">
+        <a href="javascript:menu()">
+          <img src="assets/menu.svg" class="menu-btn" />
+        </a>
+        <ul class="nav-list nav-close" id="nav">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Projects</a></li>
@@ -126,8 +128,7 @@
               id="message"
               cols="30"
               rows="10"
-            >
-            </textarea>
+            ></textarea>
             <button type="submit">SUBMIT</button>
           </form>
         </div>
@@ -155,5 +156,6 @@
       <a href="#"><img src="assets/ph.svg" class="sicon" /></a>
       <a href="#"><img src="assets/mail.svg" class="sicon" /></a>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
