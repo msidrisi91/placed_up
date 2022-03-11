@@ -93,6 +93,7 @@ a {
   margin-right: 10px;
   font-size: 1rem;
   color: white;
+  /* display: block; */
 }
 
 .hero-nav a {
@@ -148,6 +149,10 @@ a {
   overflow-x: scroll;
   margin-top: 40px;
   padding: 20px;
+}
+
+.project-list::-webkit-scrollbar {
+  width: 0px;
 }
 
 .project-img {
