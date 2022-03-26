@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="home">
+      <h1>ToDo List</h1>
+
+      <form action="/" method="post">
+        <input type="text" name="title" placeholder="Title" />
+        <input type="text" name="description" placeholder="Description" />
+        <input type="submit" value="Create" />
+      </form>
+      <div class="list">
+        <% for(let i = 0; i < tasks.length; i++ ) { if(tasks[i]._id == id) {%>
+
+        <div class="entry">
+          <form action="/edit/<%=id%>" method="post">
+            <input
+              type="text"
+              name="title"
+              placeholder="Title"
+              value="<%= tasks[i].title %>"
+            />
+            <input
+              type="text"
+              name="description"
+              placeholder="Description"
+              value="<%= tasks[i].description %>"
+            />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <% } else { %>
+        <div class="entry">
+          <h2><%= tasks[i].title %></h2>
+          <p><%= tasks[i].description %></p>
+          <a href="/edit/<%=tasks[i]._id%>">Edit</a>
+          <a href="/delete/<%=tasks[i]._id%>">Delete</a>
+        </div>
+        <% }} %>
+      </div>
+    </div>
+  </body>
+</html>
