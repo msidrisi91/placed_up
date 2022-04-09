@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Video Chat</title>
+  </head>
+  <script>
+    const ROOM_ID = "<% room_id %>";
+  </script>
+
+  <script
+    src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"
+    defer
+  ></script>
+
+  <script src="/socket.io/socket.io.js" defer></script>
+
+  <body>
+    <div class="header">
+      <h1>Bazinga</h1>
+    </div>
+    <div class="main">
+      <div class="main_left">
+        <div class="video_group">
+          <div id="video-grid"></div>
+        </div>
+        <div class="options">
+          <div class="options_left">
+            <div class="mute icon">
+              <i class="fa fa-microphone"></i>
+            </div>
+            <div class="videostop icon">
+              <i class="fa fa-video-camera"></i>
+            </div>
+          </div>
+          <div class="invite icon">
+            <i class="fa fa-user-plus"></i>
+          </div>
+        </div>
+      </div>
+      <div class="main_right">
+        <div class="main_chat_window">
+          <div class="messages"></div>
+        </div>
+        <div class="main_message_container">
+          <input
+            id="chat_message"
+            type="text"
+            autocomplete="off"
+            placeholder="Type message here..."
+          />
+          <div class="send">
+            <i class="fa fa-send"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
