@@ -19,10 +19,14 @@ app.get("/:room", (req, res) => {
 });
 
 io.on("connection", (socket) => {
-  socket.on("join-room", (roomid, userid) => {
+  socket.on("join-room", (roomid, userid, username) => {
     socket.join(roomid);
 
     socket.to(roomid).emit("user-connected", userid);
+
+    socket.on("message", (message) => {
+      io.to(roomid).emit("createmessage", message, userid, username);
+    });
 
     socket.on("disconnect", () => {
       socket.to(roomid).emit("user-disconnected", userid);

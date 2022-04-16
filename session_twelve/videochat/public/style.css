@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Poppins;
+  color: #fff;
 }
 h1 {
   margin: 0px;
@@ -76,12 +77,31 @@ video {
 }
 
 .main_chat_window {
-  height: 93%;
+  height: calc(100vh - 100px);
   border: 2px solid #4c0027;
   margin-bottom: 4%;
 }
 .messages {
-  height: 100%;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: #980f5a;
+  color: #fff;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+
+.message span {
+  font-weight: bold;
+  color: rgb(255, 211, 211);
+  font-size: 1rem;
 }
 
 /* 980F5A */

@@ -14,6 +14,10 @@
   <script>
     const ROOM_ID = "<% room_id %>";
   </script>
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
 
   <script
     src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"
@@ -34,20 +38,20 @@
         <div class="options">
           <div class="options_left">
             <div class="mute icon">
-              <i class="fa fa-microphone"></i>
+              <i id="mic" class="fa fa-microphone"></i>
             </div>
             <div class="videostop icon">
-              <i class="fa fa-video-camera"></i>
+              <i id="video" class="fa fa-video-camera"></i>
             </div>
           </div>
           <div class="invite icon">
-            <i class="fa fa-user-plus"></i>
+            <i id="invite" class="fa fa-user-plus"></i>
           </div>
         </div>
       </div>
       <div class="main_right">
         <div class="main_chat_window">
-          <div class="messages"></div>
+          <div id="messages" class="messages"></div>
         </div>
         <div class="main_message_container">
           <input
@@ -56,7 +60,7 @@
             autocomplete="off"
             placeholder="Type message here..."
           />
-          <div class="send">
+          <div id="send" class="send">
             <i class="fa fa-send"></i>
           </div>
         </div>
