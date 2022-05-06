@@ -8,7 +8,8 @@ export default function FetchAPI(props) {
       "https://v2.jokeapi.dev/joke/Miscellaneous,Pun,Spooky,Christmas"
     );
     const data = await response.json();
-    setJoke(data.setup + "     :      " + data.delivery);
+    if (data.joke) setJoke(data.joke);
+    else setJoke(data.setup + "     :      " + data.delivery);
   };
 
   useEffect(() => {
