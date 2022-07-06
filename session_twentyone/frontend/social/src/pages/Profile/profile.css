@@ -1,0 +1,61 @@
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-header-image {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.profile-header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+
+.profile-header-info-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.profile-header-info-username {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #751212;
+  margin-bottom: 0.5rem;
+}
+
+.profile-page-button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: #751212;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #e9ecef;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+.profile-posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
