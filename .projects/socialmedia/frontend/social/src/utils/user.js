@@ -1,6 +1,7 @@
 // TODO: Check if the user already exist before registering
 // TODO: Chack if there is any error in login (Maybe because of wrong password)
 import upload from "./upload";
+const BACKEND_URL = "https://medie-backend.herokuapp.com";
 
 function finalize(user) {
   localStorage.setItem("user", JSON.stringify(user));
@@ -13,7 +14,7 @@ function getCurrentUser() {
 
 async function getUserById(userId) {
   try {
-    const res = await fetch(`${process.env.BACKEND_URL}/users/` + userId, {
+    const res = await fetch(`${BACKEND_URL}/users/` + userId, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +35,7 @@ async function getUserById(userId) {
 
 async function register(username, email, password, fullname) {
   try {
-    const user = await fetch(`${process.env.BACKEND_URL}/auth/register`, {
+    const user = await fetch(`${BACKEND_URL}/auth/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -58,7 +59,7 @@ async function register(username, email, password, fullname) {
 }
 
 async function login(email, password) {
-  const user = await fetch(`${process.env.BACKEND_URL}/auth/login`, {
+  const user = await fetch(`${BACKEND_URL}/auth/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -88,7 +89,7 @@ async function updateUser(userId, file, fullname, bio) {
     newUser["profilePicture"] = image_url;
   }
   try {
-    const res = await fetch(`${process.env.BACKEND_URL}/users/` + userId, {
+    const res = await fetch(`${BACKEND_URL}/users/` + userId, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

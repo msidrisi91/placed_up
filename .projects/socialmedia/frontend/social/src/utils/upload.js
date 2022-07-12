@@ -1,5 +1,6 @@
+const STORAGE_URL = "https://api.cloudinary.com/v1_1/dnln9m7lb/image/upload";
 export default async function upload(file) {
-  const url = process.env.STORAGE_URL;
+  const url = STORAGE_URL;
   const formData = new FormData();
   formData.append("file", file);
   formData.append("upload_preset", "posts_preset");
